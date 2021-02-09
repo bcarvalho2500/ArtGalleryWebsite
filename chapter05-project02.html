@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>Chapter 5</title>
+   <link rel="stylesheet" href="chapter05-project02.css" />
+</head>
+<body>
+<form method="GET" action="http://www.randyconnolly.com/tests/process.php">
+    <fieldset>
+       <legend>Advanced Art Work Search</legend>
+
+        <div id="searchBox">
+            <table>
+                <tr>
+                    <td>
+                        
+                        <input type="text" placeholder="Search titles" id = "Search">
+                        <label for="Search"></label>
+
+                        <label for="">Subject: </label>
+                        <input type="radio" name="subject" id="history" value="history">
+                        <label for="history">History</label>
+                        <input type="radio" name="subject" id="person" value="person">
+                        <label for="person">Person</label>
+                        <input type="radio" name="subject" id="landscape" value="landscape">
+                        <label for="landscape">Lanscape</label>
+                        
+                    
+                        <select name="genre" id="genre">
+                            <option value="SelectGenre" disabled selected >Select Genre</option>
+                            <option value="Baroque">Baroque</option>
+                            <option value="Renaissance">Renaissance</option>
+                            <option value="Realism">Realism</option>
+                            <option value="Romanticism">Romanticism</option>
+                            <option value="Mannerism">Mannerism</option>
+                            <option value="Neo-Classicism">Neo-Classicism</option>
+                        </select>
+                        <button>Filter</button>
+                    </td>
+                </tr>
+            </table>
+        </div>   
+
+        <div id="settingsBox">
+            <select name="actions" id="actions">
+                <option value="bulkAction" disabled selected>Bulk Actions</option>
+                <option value="archive">Archive</option>
+                <option value="edit">Edit</option>
+                <option value="delete">Delete</option>
+                <option value="collection">Collection</option>
+            </select>
+            <button>Apply To All</button>
+        </div>
+
+        <div id="paintingBox">
+            <table>
+                <thead>
+                    <caption>Paintings</caption>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th></th>
+                        <th>Title</th>
+                        <th>Artist</th>
+                        <th>Year</th>
+                        <th>Genre</th>
+                        <th>Actions</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="checkboxArray[]" value="10">
+                            <img src="images/05030.jpg" alt="Death of Marat">
+                        </td>
+                        <td>
+                            <p><i>Death of Marat</i></p>
+                        </td>
+                        <td>
+                            <p>David, Jacques-Louis</p>
+                        </td>
+                        <td>
+                            <p>1793</p>
+                        </td>
+                        <td>
+                            <p>Romanticism</p>
+                        </td>
+                        <td>
+                            <button href="#"><img src="images/archive.png" alt="archive"></button>
+                            <button href="#"><img src="images/edit.png" alt="edit"></button>
+                            <button href="#"><img src="images/delete.png" alt="delete"></button>
+                            <button href="#"><img src="images/collection.png" alt="collection"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="checkboxArray[]" value="20">
+                            <img src="images/120010.jpg" alt="Portrait of Eleanor of Toledo">
+                        </td>
+                        <td>
+                            <p><i>Portrait of Eleanor of Toledo</i></p>
+                        </td>
+                        <td>
+                            <p>Bronzino, Agnolo</p>
+                        </td>
+                        <td>
+                            <p>1545</p>
+                        </td>
+                        <td>
+                            <p>Mannerism</p>
+                        </td>
+                        <td>
+                            <button href="#"><img src="images/archive.png" alt="archive"></button>
+                            <button href="#"><img src="images/edit.png" alt="edit"></button>
+                            <button href="#"><img src="images/delete.png" alt="delete"></button>
+                            <button href="#"><img src="images/collection.png" alt="collection"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="checkboxArray[]" value="30">
+                            <img src="images/07020.jpg" alt="Liberty Leading the People">
+                        </td>
+                        <td>
+                            <p><i>Liberty Leading the People</i></p>
+                        </td>
+                        <td>
+                            <p>Delacroix, Eugene</p>
+                        </td>
+                        <td>
+                            <p>1830</p>
+                        </td>
+                        <td>
+                            <p>Romanticism</p>
+                        </td>
+                        <td>
+                            <button href="#"><img src="images/archive.png" alt="archive"></button>
+                            <button href="#"><img src="images/edit.png" alt="edit"></button>
+                            <button href="#"><img src="images/delete.png" alt="delete"></button>
+                            <button href="#"><img src="images/collection.png" alt="collection"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="checkboxArray[]" value="40">
+                            <img src="images/13030.jpg" alt="Arrangement in Grey and Black">
+                        </td>
+                        <td>
+                            <p><i>Arrangement in Grey and Black</i></p>
+                        </td>
+                        <td>
+                            <p>Whistler, James Abbott</p>
+                        </td>
+                        <td>
+                            <p>1871</p>
+                        </td>
+                        <td>
+                            <p>Realism</p>
+                        </td>
+                        <td>
+                            <button href="#"><img src="images/archive.png" alt="archive"></button>
+                            <button href="#"><img src="images/edit.png" alt="edit"></button>
+                            <button href="#"><img src="images/delete.png" alt="delete"></button>
+                            <button href="#"><img src="images/collection.png" alt="collection"></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="checkboxArray[]" value="50">
+                            <img src="images/06010.jpg" alt="Mademoiselle Caroline Riviere">
+                        </td>
+                        <td>
+                            <p><i>Mademoiselle Caroline Riviere</i></p>
+                        </td>
+                        <td>
+                            <p>Ingres, Jean-Auguste</p>
+                        </td>
+                        <td>
+                            <p>1806</p>
+                        </td>
+                        <td>
+                            <p>Neo-Classicism</p>
+                        </td>
+                        <td>
+                            <button href="#"><img src="images/archive.png" alt="archive"></button>
+                            <button href="#"><img src="images/edit.png" alt="edit"></button>
+                            <button href="#"><img src="images/delete.png" alt="delete"></button>
+                            <button href="#"><img src="images/collection.png" alt="collection"></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div> 
+    </fieldset>  
+</form>
+</body>
+</html>
