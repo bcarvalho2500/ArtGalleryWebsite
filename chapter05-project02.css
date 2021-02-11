@@ -31,13 +31,14 @@ div#searchBox, div#settingsBox, div#paintingBox {
 
 }
 div#searchBox { margin-top: 1em; }
+
 div#artistBox { 
    background-color: #EEEEEE;
     
 }
 
 
-table thead {
+div#paintingBox table thead {
    background-color: #E0E0E0 ;
     
 }
